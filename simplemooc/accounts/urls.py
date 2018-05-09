@@ -8,5 +8,6 @@ urlpatterns = [
     url(r'^sair/$', logout, {'next_page': 'home'}, name='logout'),
  	url(r'^cadastre-se/$', 'simplemooc.accounts.views.register', name='register'),
  	url(r'^editar/$', 'simplemooc.accounts.views.edit', name='edit'),
+ 	url(r'^alterar-senha/$', 'simplemooc.accounts.views.edit_password', name='edit_password'),
  
 ]
